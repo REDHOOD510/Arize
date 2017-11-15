@@ -1,9 +1,7 @@
 var mainState = {
     preload: function() {
-        this.game.load.image('player', 'assets/player.PNG');
-        this.game.load.image('wall', 'assets/wall.PNG');
-        this.game.load.image('coin', 'assets/coin.PNG');
-        this.game.load.image('enemy', 'assets/lava.PNG');
+        this.game.load.image('soldier', 'assets/player.jpg');
+        this.game.load.image('zombie', 'assets/enemy.jpg');
     },
     
     create: function() {
@@ -40,7 +38,7 @@ var mainState = {
             'x                                                             x',
             'x                                                             x',
             'x                                                             x',
-            'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+            'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
         ];
         
         for (var i = 0; i < level.length; i++) {
