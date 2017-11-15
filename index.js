@@ -1,13 +1,11 @@
 var mainState = {
     preload: function() {
-        this.game.load.image('player', 'assets/player.PNG');
-        this.game.load.image('wall', 'assets/wall.PNG');
-        this.game.load.image('coin', 'assets/coin.PNG');
-        this.game.load.image('enemy', 'assets/lava.PNG');
+        this.game.load.image('soldier', 'assets/player.jpg');
+        this.game.load.image('zombie', 'assets/enemy.jpg');
     },
     
     create: function() {
-        this.game.stage.backgroundColor = '#3598db';
+        this.game.stage.backgroundColor = '#000000';
         this.game.physics.startSystem(Phaser.Physics.ARCADE);
         game.world.enableBody = true;
         
@@ -15,7 +13,7 @@ var mainState = {
         
         this.player = this.game.add.sprite(70, 100, 'player');
         
-        this.player.body.gravity.y = 600;
+        this.player.body.gravity.y = 800;
         
         this.walls = this.game.add.group();
         this.coins = this.game.add.group();
@@ -23,12 +21,12 @@ var mainState = {
         
         var level = [
             'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-            '!         !                               x',
-            '!                 o        o         o    x',
-            '!         o                     !         x',
-            '!                    x                    x',
-            '!     o   !    x     x        o      o    x',
-            'xxxxxxxxxxxxxxxx!!!!!xxxxxxxxxxxxxxxxxxxxxx',
+            'x                                        x',
+            'x                                        x',
+            'x                                        x',
+            'x                                        x',
+            'x                                        x',
+            'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
         ];
         
         for (var i = 0; i < level.length; i++) {
