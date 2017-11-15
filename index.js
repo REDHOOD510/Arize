@@ -15,7 +15,7 @@ var mainState = {
         
         this.player = this.game.add.sprite(70, 100, 'player');
         
-        this.player.body.gravity.y = 600;
+        this.player.body.gravity.y = 800;
         
         this.walls = this.game.add.group();
         this.coins = this.game.add.group();
