@@ -5,23 +5,15 @@ var mainState = {
     },
     
     create: function() {
-<<<<<<< HEAD
-        this.game.stage.backgroundColor = 'black';
-=======
         this.game.stage.backgroundColor = '#000000';
->>>>>>> origin/master
         this.game.physics.startSystem(Phaser.Physics.ARCADE);
         game.world.enableBody = true;
         
         this.cursor = this.game.input.keyboard.createCursorKeys();
         
         this.player = this.game.add.sprite(70, 100, 'player');
-        
-<<<<<<< HEAD
-        this.player.body.gravity.y = 1;
-=======
+       
         this.player.body.gravity.y = 800;
->>>>>>> origin/master
         
         this.walls = this.game.add.group();
         this.coins = this.game.add.group();
