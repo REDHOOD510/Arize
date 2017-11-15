@@ -7,7 +7,7 @@ var mainState = {
     },
     
     create: function() {
-        this.game.stage.backgroundColor = '#3598db';
+        this.game.stage.backgroundColor = 'black';
         this.game.physics.startSystem(Phaser.Physics.ARCADE);
         game.world.enableBody = true;
         
@@ -15,7 +15,7 @@ var mainState = {
         
         this.player = this.game.add.sprite(70, 100, 'player');
         
-        this.player.body.gravity.y = 600;
+        this.player.body.gravity.y = 1;
         
         this.walls = this.game.add.group();
         this.coins = this.game.add.group();
