@@ -20,13 +20,25 @@ var mainState = {
         this.enemies = this.game.add.group();
         
         var level = [
-            'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-            'x                                        x',
-            'x                                        x',
-            'x                                        x',
-            'x                                        x',
-            'x                                        x',
-            'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+            'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
         ];
         
         for (var i = 0; i < level.length; i++) {
