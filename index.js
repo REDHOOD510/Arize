@@ -7,7 +7,7 @@ var mainState = {
     },
     
     create: function() {
-        this.game.stage.backgroundColor = '#3598db';
+        this.game.stage.backgroundColor = '#000000';
         this.game.physics.startSystem(Phaser.Physics.ARCADE);
         game.world.enableBody = true;
         
@@ -22,13 +22,25 @@ var mainState = {
         this.enemies = this.game.add.group();
         
         var level = [
-            'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-            '!         !                               x',
-            '!                 o        o         o    x',
-            '!         o                     !         x',
-            '!                    x                    x',
-            '!     o   !    x     x        o      o    x',
-            'xxxxxxxxxxxxxxxx!!!!!xxxxxxxxxxxxxxxxxxxxxx',
+            'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'x                                                             x',
+            'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
         ];
         
         for (var i = 0; i < level.length; i++) {
