@@ -1,14 +1,26 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8"/>
         <script src="phaser.min.js"></script>
         <script src="index.js"></script>
         <title>Phaser Game</title>
+<!--        <link rel="stylesheet" href="cursor.css">-->
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="cursor.js"></script>
+        <title> Cursor Mirror </title>
     </head>
     <body>
-        <script>
-            var game = new Phaser.Game(2000, 500);
+        <div class="top-half-black"></div>
+        <div class="bottom-half-white">     
+                <img id="mirror-image" src="upside-down.png">
+        </div>
+
+    <script>
+
+ 
+
+            var game = new Phaser.Game(1350, 800);
             game.state.add("main", mainState);
             game.state.start("main");
         </script>
